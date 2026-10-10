@@ -4,6 +4,10 @@ plugins {
     id 'dev.architectury.loom'
 }
 
+repositories {
+    maven { url = 'https://maven.terraformersmc.com/releases/' }
+}
+
 architectury {
     platformSetupLoomIde()
     fabric()
