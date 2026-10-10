@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "horimap",
+  "version": "${version}",
+  "name": "HoriMap",
+  "description": "A JourneyMap-inspired minimap and world map mod",
+  "authors": ["hauchdev"],
+  "contact": {
+    "homepage": "https://github.com/hauchdev/horimap",
+    "sources": "https://github.com/hauchdev/horimap"
+  },
+  "license": "MIT",
+  "icon": "assets/horimap/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.horimap.fabric.HoriMapFabric"
+    ],
+    "client": [
+      "com.horimap.fabric.HoriMapFabricClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric-api": "*",
+    "minecraft": ">=1.16.5"
+  }
+}
