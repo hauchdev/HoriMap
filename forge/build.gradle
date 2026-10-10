@@ -14,7 +14,7 @@ dependencies {
 
     modImplementation "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
-    implementation project(':common)
+    implementation project(':common')
 }
 
 minecraft {
