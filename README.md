@@ -1,39 +1,53 @@
 # HoriMap
 
-A JourneyMap-inspired minimap and world map mod for Minecraft.
+[![Build Status](https://github.com/hauchdev/HoriMap/actions/workflows/build.yml/badge.svg)](https://github.com/hauchdev/HoriMap/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-blue.svg)](https://minecraft.net)
 
-**Author:** hauchdev  
-**License:** MIT
+A JourneyMap-inspired minimap and world map mod for Minecraft, built with [Architectury](https://docs.architectury.dev) to support both Fabric and Forge from a single codebase.
 
 ## Features
 
-- **Minimap** - Real-time minimap with configurable size, zoom, and position
-- **World Map** - Full world map with chunk rendering
-- **Waypoints** - Create, manage, and navigate to waypoints
-- **Entity Radar** - See nearby entities on the minimap
-- **Cave Map** - Underground mapping (planned)
-- **Coordinates Display** - Show XYZ coordinates on screen
-- **Biome Display** - Show current biome (planned)
+- **Minimap** — Real-time minimap with configurable size, zoom, and position
+- **World Map** — Full world map with chunk rendering
+- **Waypoints** — Create, manage, and navigate to waypoints
+- **Entity Radar** — See nearby entities on the minimap
+- **Cave Map** — Underground mapping *(planned)*
+- **Coordinates Display** — Show XYZ coordinates on screen
+- **Biome Display** — Show current biome *(planned)*
 
 ## Platforms
 
 | Platform | Status | Versions |
 |----------|--------|----------|
-| Forge   | ✅ Supported | 1.16.5+ |
-| Fabric  | ✅ Supported | 1.16.5+ |
+| Forge   | ✅ Supported | 1.20.1 |
+| Fabric  | ✅ Supported | 1.20.1 |
 
-## Development
+## Building from Source
 
 ### Prerequisites
 
-- Java 17+
-- Gradle 8.x
+- [JDK 17+](https://adoptium.net/)
+- [Git](https://git-scm.com/)
 
-### Building
+### Steps
 
 ```bash
+git clone https://github.com/hauchdev/HoriMap.git
+cd HoriMap
 ./gradlew build
 ```
+
+Artifacts will be in `build/libs/`.
+
+## Development
+
+### Setup
+
+1. Clone the repository
+2. Open in IntelliJ IDEA (recommended) or your preferred IDE
+3. Run `./gradlew genSources` to generate Minecraft sources
+4. Import the Gradle project
 
 ### Running
 
@@ -50,36 +64,23 @@ A JourneyMap-inspired minimap and world map mod for Minecraft.
 ```
 horimap/
 ├── common/          # Shared code between platforms
-│   └── src/main/java/com/horimap/
-│       ├── HoriMap.java
+│   └── src/main/java/dev/hauch/horimap/
+│       ├── Horimap.java
 │       ├── config/
 │       ├── map/
 │       └── waypoint/
 ├── fabric/          # Fabric-specific implementation
-│   └── src/main/java/com/horimap/fabric/
+│   └── src/main/java/dev/hauch/horimap/fabric/
 ├── forge/           # Forge-specific implementation
-│   └── src/main/java/com/horimap/forge/
+│   └── src/main/java/dev/hauch/horimap/forge/
 ├── gradle/
 └── build.gradle
 ```
 
-## Configuration
+## Contributing
 
-HoriMap settings can be configured in-game via:
-- **Mod Menu** (Fabric)
-- **Mod Options** (Forge)
-- **Config file**: `config/horimap.json`
-
-## Key Bindings
-
-| Key | Action |
-|-----|--------|
-| J | Toggle Minimap |
-| M | Open World Map |
-| P | Open Waypoint Manager |
-| O | Open Settings |
-| B | Create Waypoint |
+Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## License
 
-MIT License - See [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
