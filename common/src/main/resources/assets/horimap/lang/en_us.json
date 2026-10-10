@@ -1,0 +1,35 @@
+{
+  "horimap.name": "HoriMap",
+  "horimap.description": "A JourneyMap-inspired minimap and world map mod",
+
+  "horimap.config.title": "HoriMap Settings",
+  "horimap.config.minimap": "Minimap",
+  "horimap.config.worldmap": "World Map",
+  "horimap.config.waypoints": "Waypoints",
+  "horimap.config.entity_radar": "Entity Radar",
+  "horimap.config.cave_map": "Cave Map",
+
+  "horimap.config.minimap.enabled": "Enable Minimap",
+  "horimap.config.minimap.size": "Minimap Size",
+  "horimap.config.minimap.zoom": "Minimap Zoom",
+  "horimap.config.minimap.position": "Minimap Position",
+
+  "horimap.config.waypoints.enabled": "Enable Waypoints",
+  "horimap.config.waypoints.render_distance": "Waypoint Render Distance",
+
+  "horimap.key.toggle_minimap": "Toggle Minimap",
+  "horimap.key.open_worldmap": "Open World Map",
+  "horimap.key.open_waypoints": "Open Waypoint Manager",
+  "horimap.key.open_settings": "Open HoriMap Settings",
+  "horimap.key.create_waypoint": "Create Waypoint",
+
+  "horimap.waypoint.created": "Waypoint '%s' created",
+  "horimap.waypoint.deleted": "Waypoint '%s' deleted",
+  "horimap.waypoint.title": "Waypoints",
+  "horimap.waypoint.name": "Name",
+  "horimap.waypoint.position": "Position",
+  "horimap.waypoint.dimension": "Dimension",
+  "horimap.waypoint.color": "Color",
+  "horimap.waypoint.visible": "Visible",
+  "horimap.waypoint.show_distance": "Show Distance"
+}
