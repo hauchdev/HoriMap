@@ -2,7 +2,6 @@ plugins {
     id 'java'
     id 'architectury-plugin'
     id 'dev.architectury.loom'
-    id 'net.minecraftforge.gradle'
 }
 
 architectury {
@@ -11,12 +10,10 @@ architectury {
 
 dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
-    forge "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    implementation project(':common')
-}
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    mappings loom.officialMojangMappings()
 
-minecraft {
-    mappings channel: 'official', version: minecraft_version
+    implementation project(':common')
 }
 
 minecraft {
