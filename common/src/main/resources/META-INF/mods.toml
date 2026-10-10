@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[dependencies.horimap]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.horimap]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[mods]]
+    modId="horimap"
+    version="${version}"
+    displayName="HoriMap"
+    authors="hauchdev"
+    description='A JourneyMap-inspired minimap and world map mod'
