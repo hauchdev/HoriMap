@@ -6,7 +6,7 @@ plugins {
 
 architectury {
     platformSetupLoomIde()
-    common()
+    common("fabric", "forge")
 }
 
 dependencies {

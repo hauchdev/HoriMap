@@ -15,8 +15,7 @@ dependencies {
 
     forge "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
-    implementation project(path: ':common', configuration: 'namedElements') { transitive = false }
-    include project(':common')
+    implementation project(':common')
 }
 
 minecraft {
