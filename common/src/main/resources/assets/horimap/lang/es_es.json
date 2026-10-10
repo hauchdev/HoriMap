@@ -1,0 +1,35 @@
+{
+  "horimap.name": "HoriMap",
+  "horimap.description": "Un mod de minimapa y mapa del mundo inspirado en JourneyMap",
+
+  "horimap.config.title": "Configuración de HoriMap",
+  "horimap.config.minimap": "Minimapa",
+  "horimap.config.worldmap": "Mapa del Mundo",
+  "horimap.config.waypoints": "Puntos de Ruta",
+  "horimap.config.entity_radar": "Radar de Entidades",
+  "horimap.config.cave_map": "Mapa de Cuevas",
+
+  "horimap.config.minimap.enabled": "Activar Minimapa",
+  "horimap.config.minimap.size": "Tamaño del Minimapa",
+  "horimap.config.minimap.zoom": "Zoom del Minimapa",
+  "horimap.config.minimap.position": "Posición del Minimapa",
+
+  "horimap.config.waypoints.enabled": "Activar Puntos de Ruta",
+  "horimap.config.waypoints.render_distance": "Distancia de Renderizado",
+
+  "horimap.key.toggle_minimap": "Alternar Minimapa",
+  "horimap.key.open_worldmap": "Abrir Mapa del Mundo",
+  "horimap.key.open_waypoints": "Abrir Gestor de Puntos de Ruta",
+  "horimap.key.open_settings": "Abrir Configuración de HoriMap",
+  "horimap.key.create_waypoint": "Crear Punto de Ruta",
+
+  "horimap.waypoint.created": "Punto de ruta '%s' creado",
+  "horimap.waypoint.deleted": "Punto de ruta '%s' eliminado",
+  "horimap.waypoint.title": "Puntos de Ruta",
+  "horimap.waypoint.name": "Nombre",
+  "horimap.waypoint.position": "Posición",
+  "horimap.waypoint.dimension": "Dimensión",
+  "horimap.waypoint.color": "Color",
+  "horimap.waypoint.visible": "Visible",
+  "horimap.waypoint.show_distance": "Mostrar Distancia"
+}
