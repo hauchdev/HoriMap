@@ -17,27 +17,25 @@ dependencies {
     implementation project(':common')
 }
 
-minecraft {
-    runs {
-        client {
-            client()
-            property 'forge.logging.console.level', 'debug'
-            horimap {
-                mods {
-                    horimap {
-                        source sourceSets.main
-                    }
+runs {
+    client {
+        client()
+        property 'forge.logging.console.level', 'debug'
+        horimap {
+            mods {
+                horimap {
+                    source sourceSets.main
                 }
             }
         }
+    }
 
-        server {
-            server()
-            horimap {
-                mods {
-                    horimap {
-                        source sourceSets.main
-                    }
+    server {
+        server()
+        horimap {
+            mods {
+                horimap {
+                    source sourceSets.main
                 }
             }
         }
