@@ -1,5 +1,6 @@
 package com.horimap.fabric;
 
+import com.horimap.HoriMap;
 import net.fabricmc.api.ClientModInitializer;
 
 /**

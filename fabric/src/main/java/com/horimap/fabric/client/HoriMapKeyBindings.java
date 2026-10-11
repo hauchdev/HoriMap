@@ -1,53 +1,37 @@
 package com.horimap.fabric.client;
 
+import com.mojang.blaze3d.platform.InputConstants;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
-import net.minecraft.client.option.KeyBinding;
-import net.minecraft.client.util.InputUtil;
+import net.minecraft.client.KeyMapping;
 import org.lwjgl.glfw.GLFW;
 
 /**
- * Key bindings for HoriMap on Fabric.
+ * Key bindings for HoriMap on Fabric (official Mojang mappings names).
  */
 public class HoriMapKeyBindings {
-    public static KeyBinding toggleMinimap;
-    public static KeyBinding openWorldMap;
-    public static KeyBinding openWaypoints;
-    public static KeyBinding openSettings;
-    public static KeyBinding createWaypoint;
+    public static KeyMapping toggleMinimap;
+    public static KeyMapping openWorldMap;
+    public static KeyMapping openWaypoints;
+    public static KeyMapping openSettings;
+    public static KeyMapping createWaypoint;
 
     public static void register() {
-        toggleMinimap = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-            "horimap.key.toggle_minimap",
-            InputUtil.Type.KEYSYM,
-            GLFW.GLFW_KEY_J,
-            "horimap.name"
-        ));
+        toggleMinimap = registerKey("horimap.key.toggle_minimap", GLFW.GLFW_KEY_J);
 
-        openWorldMap = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-            "horimap.key.open_worldmap",
-            InputUtil.Type.KEYSYM,
-            GLFW.GLFW_KEY_M,
-            "horimap.name"
-        ));
+        openWorldMap = registerKey("horimap.key.open_worldmap", GLFW.GLFW_KEY_M);
 
-        openWaypoints = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-            "horimap.key.open_waypoints",
-            InputUtil.Type.KEYSYM,
-            GLFW.GLFW_KEY_P,
-            "horimap.name"
-        ));
+        openWaypoints = registerKey("horimap.key.open_waypoints", GLFW.GLFW_KEY_P);
 
-        openSettings = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-            "horimap.key.open_settings",
-            InputUtil.Type.KEYSYM,
-            GLFW.GLFW_KEY_O,
-            "horimap.name"
-        ));
+        openSettings = registerKey("horimap.key.open_settings", GLFW.GLFW_KEY_O);
 
-        createWaypoint = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-            "horimap.key.create_waypoint",
-            InputUtil.Type.KEYSYM,
-            GLFW.GLFW_KEY_B,
+        createWaypoint = registerKey("horimap.key.create_waypoint", GLFW.GLFW_KEY_B);
+    }
+
+    private static KeyMapping registerKey(String name, int key) {
+        return KeyBindingHelper.registerKeyBinding(new KeyMapping(
+            name,
+            InputConstants.Type.KEYSYM,
+            key,
             "horimap.name"
         ));
     }
