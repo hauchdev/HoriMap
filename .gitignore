@@ -18,6 +18,8 @@ build/
 run/
 logs/
 
+# Architectury transformer cache
+.architectury-transformer/
 # OS
 .DS_Store
 Thumbs.db
