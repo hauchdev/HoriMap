@@ -22,10 +22,22 @@ loom {
         client {
             client()
             property 'forge.logging.console.level', 'debug'
+            property 'forge.enabledNamespaces', 'minecraft,forge'
+            mods {
+                horimap {
+                    source sourceSets.main
+                }
+            }
         }
 
         server {
             server()
+            property 'forge.enabledNamespaces', 'minecraft,forge'
+            mods {
+                horimap {
+                    source sourceSets.main
+                }
+            }
         }
     }
 }
